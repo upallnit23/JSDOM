@@ -1,0 +1,47 @@
+<!-- main file for jsdom printouts -->
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width-device-width", initial-scale="1.0"> -->
+<title>Products Form</title>
+<img id="image" src="lightbulb.jfif" alt="Random image" onmouseover="changeImage()" onmouseout="changeBackImage()" style="width: 10%; height: 5%;">
+<script src="jsdom1a.js" defer></script> 
+<style>
+    .container {
+        margin: auto;
+        width: 50%;
+        padding: 1%;
+        border: 2%;
+        border-radius: 1%;
+        background-color: cornsilk;
+    }
+
+    .change {
+        background-color:gold;
+    }
+
+    .change2 {
+        background-color:rgb(197, 113, 44);
+    }
+</style>
+</head>
+<body>
+    <div class="container" id="phold" onmouseover="changePholder()" onmouseout="changPholderBack()">
+        <h3>Products Form</h3>
+        <form id="productform" onsubmit="actSubmit(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required><br><br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required><br><br>
+            <button id="change" onclick="cchange()" type="submit">Submit</button>
+        </form> 
+        <div id="productList">
+
+        </div>
+    </div>
+</body>
+</html>
+

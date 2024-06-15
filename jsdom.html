@@ -1,0 +1,39 @@
+<!-- main file for jsdom printouts -->
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width-device-width", initial-scale="1.0"> -->
+<title>Products Form</title>
+<script src="jsdom.js" defer></script>
+<script src="jsdom2.js"></script> 
+<style>
+    .container {
+        margin: auto;
+        width: 50%;
+        padding: 1%;
+        border: 2%;
+        border-radius: 1%;
+        background-color: cornsilk;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h3>Products Form</h3>
+        <form id="productform">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required><br><br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required><br><br>
+            <button type="submit">Submit</button>
+        </form> 
+        <div id="productList">
+
+        </div>
+    </div>
+</body>
+</html>
+
